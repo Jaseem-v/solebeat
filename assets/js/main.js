@@ -172,3 +172,101 @@ $(document).ready(function () {
 
 
 
+
+
+/////////////////////////////
+////
+
+// const imgs = document.querySelectorAll('.img-select a');
+// const imgBtns = [...imgs];
+// let imgId = 1;
+
+// imgBtns.forEach((imgItem) => {
+//     imgItem.addEventListener('click', (event) => {
+//         event.preventDefault();
+//         imgId = imgItem.dataset.id;
+//         slideImage();
+//     });
+// });
+
+// function slideImage() {
+//     const displayWidth = document.querySelector('.img-showcase .ImageWrapper:first-child').clientWidth;
+
+//     document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+// }
+
+// window.addEventListener('resize', slideImage);
+
+
+/// store the wrapper HTMLElement into a constant
+const imageWrapper = document.querySelector('.img-display-swiper');
+const animatedImage = imageWrapper.querySelectorAll('.AnimatedImage');
+/// then get the width and height properties
+const { offsetWidth, offsetHeight } = imageWrapper;
+/// create a timeout handler for requestAnimationFrame
+let rafTimeout = null, callTimeout = null;
+const CalculateOrigin = (event) => {
+    /// get local cursor offset
+    const { offsetX, offsetY } = event;
+    /// we know than transform-origin centered is equal to 50% 50%
+    /// so we need to handle this position with the delta between
+    /// mouse position and wrapper bounds
+
+    /// calculate deltas
+    const deltaX = (100 / offsetWidth) * offsetX;
+    const deltaY = (100 / offsetHeight) * offsetY;
+    /// apply the style property to the image
+    animatedImage.forEach(el => {
+        el.style.transformOrigin = `${Math.min(100, deltaX)}% ${Math.min(100, deltaY)}%`
+    })
+
+    // 
+}
+
+/// add an event listener
+imageWrapper.addEventListener('mousemove', (event) => {
+    if (rafTimeout) {
+        window.cancelAnimationFrame(rafTimeout);
+    }
+    /// use requestAnimationFrame for event debouncing and animation frame improvements
+    rafTimeout = window.requestAnimationFrame(() => CalculateOrigin(event));
+});
+
+
+
+
+
+//////////////////////////////////////////////////
+//////
+
+var swiper3 = new Swiper(".img-thumb-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper4 = new Swiper(".img-display-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper3,
+    },
+});
+
+
+
+///////////////////////////////
+
+const btnssdp = document.querySelectorAll(".sdp__quantity-btn")
+
+btnssdp.forEach(el=>{
+    el.addEventListener('click',e=>{
+        e.preventDefault()
+        // if(e.target.dataset.value
+    })
+})

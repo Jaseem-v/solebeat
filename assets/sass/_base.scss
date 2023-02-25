@@ -199,8 +199,8 @@ html {
   }
 
 
-  &--primary{
-    &:hover{
+  &--primary {
+    &:hover {
       background: $color-primary;
       color: #000;
     }
@@ -222,7 +222,7 @@ html {
     margin-bottom: 3rem;
   }
 
-  &--left{
+  &--left {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -459,7 +459,7 @@ html {
 //   overflow: hidden;
 // }
 
-.swiper-container{
+.swiper-container {
   overflow: hidden;
 }
 
@@ -587,6 +587,196 @@ html {
       box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.15);
       transform: translateY(-3px);
       border-bottom: 1px solid #82b440;
+    }
+  }
+}
+
+.row {
+  --bs-gutter-y: 1.5rem !important;
+}
+
+///////////////////////////
+/// breadcrumb
+
+.header-bread {
+  padding: 4rem 0;
+  background: #f8f9fa;
+
+  &__content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    li,
+    a {
+      font-size: 1.4rem;
+      color: #7a7a7a;
+      font-weight: 500;
+
+    }
+
+    a {
+      position: relative;
+      padding-right: 2rem;
+
+      &::after {
+        position: absolute;
+        content: "*";
+        right: 0;
+        top: -20%;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+///////////////////////////////////
+/// sdp
+
+.sdp {
+
+
+  .ImageWrapper {
+    width: 100%;
+    height: 50rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+    overflow: hidden;
+
+    .AnimatedImage {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      background: transparent no-repeat center;
+      background-size: contain;
+      transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+      /// default origin is in center
+      transform-origin: 50% 50%;
+      pointer-events: none;
+    }
+
+    &:hover {
+      cursor: crosshair;
+
+      .AnimatedImage {
+        transform: scale(2);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__price {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__select {
+
+
+    select {
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      flex: 1;
+      padding: 0 1em;
+      color: #fff;
+      background-color: #2c3e50;
+      background-image: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+
+      option {
+        font-size: 1.5rem;
+      }
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    .select {
+      position: relative;
+      display: flex;
+      width: 80%;
+      height: 3rem;
+      border-radius: .25em;
+      overflow: hidden;
+
+      &::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: #34495e;
+        transition: .25s all ease;
+        pointer-events: none;
+        color: #fff;
+      }
+
+      &:hover {
+        &::after {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 50%;
+    margin-top: 5rem;
+  }
+
+  &__quantity {
+    margin-top: 5rem;
+
+    &-btn {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 2rem;
+    }
+
+    &-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
     }
   }
 }
