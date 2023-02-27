@@ -445,7 +445,7 @@
   will-change: transform, opacity;
   z-index: -1;
 
-  &:target {
+  &.active {
     height: 100vh !important;
     opacity: 1;
     width: 100vw !important;

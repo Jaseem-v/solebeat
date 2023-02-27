@@ -1,3 +1,11 @@
+document.querySelector(".search_icon").addEventListener("click", () => {
+    document.querySelector("#search").classList.add("active")
+})
+document.querySelector("#close-search").addEventListener("click", () => {
+    document.querySelector("#search").classList.remove("active")
+})
+
+
 var swiper = new Swiper(".header_swiper", {
     spaceBetween: 30,
     effect: "fade",
@@ -268,8 +276,8 @@ var swiper4 = new Swiper(".img-display-swiper", {
 
 const btnssdp = document.querySelectorAll(".sdp__quantity-btn")
 
-btnssdp.forEach(el=>{
-    el.addEventListener('click',e=>{
+btnssdp.forEach(el => {
+    el.addEventListener('click', e => {
         e.preventDefault()
         // if(e.target.dataset.value
     })
