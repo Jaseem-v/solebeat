@@ -104,16 +104,17 @@ main {
 // footer
 
 .footer {
-  background: #121416;
+  // background: #121416;
   // background: linear-gradient(184deg,
   //     rgba(5, 39, 82, 1) 0%,
   //     rgba(38, 46, 100, 1) 100%);
   padding: 8rem 1rem 4rem;
+  border-top: 1px solid #E1E2E3;
 
   &__list {
     display: grid;
     grid-template-columns:
-      35% repeat(3, 1fr);
+      repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     column-gap: 30px;
 
@@ -124,7 +125,7 @@ main {
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, max-content) 1fr max-content;
     }
   }
@@ -149,7 +150,7 @@ main {
   &__heading {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: #252525;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -157,9 +158,9 @@ main {
   &__sub-heading {
     margin-bottom: 2rem;
     position: relative;
-    color: #fff;
+    color: #252525;
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 500;
     text-align: left;
     letter-spacing: 1px;
 
@@ -181,7 +182,7 @@ main {
 
   &__nav-items {
     cursor: pointer;
-    color: #fff;
+    color: #7A7A7A;
     font-size: 1.5rem;
     text-decoration: none;
     display: flex;
@@ -235,11 +236,18 @@ main {
   }
 
   &__copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.4rem;
-    padding-top: 0.9rem;
+    background: #252525;
+    padding: 3rem 0;
+
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.4rem;
+      // padding-top: 0.9rem;
+      background: #252525;
+    }
 
     @media only screen and (max-width: $bp-xsmall) {
       flex-direction: column;
@@ -261,6 +269,18 @@ main {
 
   &__nvf {
     color: #c3c3c3;
+  }
+
+  &__news {
+    &-input {
+      padding: 1.2rem 1.0rem;
+      min-height: 3.5rem;
+      border: 1px solid #e2e2e2;
+      width: 100%;
+      outline: none;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
   }
 }
 
@@ -376,7 +396,7 @@ header {
 
     &-slide {
       overflow: hidden;
-      max-height: 75vh;
+      // max-height: 75vh;
 
       img {
         display: block;
@@ -508,9 +528,37 @@ header {
 /////////////////////////////////
 /// product slide 
 
-.product-card {
-  cursor: grab;
+.product {
+  &-card {
+    cursor: grab;
+  }
+
+  &-slider {
+    &-btn {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 1.6rem;
+
+      &-prev,
+      &-next {
+        cursor: pointer;
+
+        &.swiper-button-disabled {
+          opacity: 0.5;
+        }
+
+        &:hover {
+          color: $color-primary;
+
+        }
+      }
+    }
+  }
 }
+
+
+
 
 /////////////////////
 /// login
@@ -622,4 +670,240 @@ header {
   }
 
 
+}
+
+
+////////////////////////////////
+/// sdp
+///////////////////////////////////
+/// sdp
+
+.sdp {
+
+
+  .ImageWrapper {
+    width: 100%;
+    height: 50rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+    overflow: hidden;
+
+    .AnimatedImage {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      background: transparent no-repeat center;
+      background-size: contain;
+      transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+      /// default origin is in center
+      transform-origin: 50% 50%;
+      pointer-events: none;
+    }
+
+    &:hover {
+      cursor: crosshair;
+
+      .AnimatedImage {
+        transform: scale(2);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+    padding: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__price {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__select {
+
+
+    select {
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      flex: 1;
+      padding: 0 1em;
+      color: #fff;
+      background-color: #2c3e50;
+      background-image: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+
+      option {
+        font-size: 1.5rem;
+      }
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    .select {
+      position: relative;
+      display: flex;
+      width: 80%;
+      height: 3rem;
+      border-radius: .25em;
+      overflow: hidden;
+
+      &::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: #34495e;
+        transition: .25s all ease;
+        pointer-events: none;
+        color: #fff;
+      }
+
+      &:hover {
+        &::after {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 50%;
+    margin-top: 5rem;
+  }
+
+  &__quantity {
+    margin-top: 5rem;
+
+    &-btn {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 2rem;
+    }
+
+    &-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////
+/// cart
+
+.cart {
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__table {
+    width: 100%;
+
+    tr {
+      border-top: 1px solid#e9e7e7;
+      border-bottom: 1px solid#e9e7e7;
+      padding: 0;
+
+      td {
+        padding: 1rem 2rem;
+
+      }
+    }
+  }
+
+  &__product {
+    &-title {
+      font-size: 1.5rem;
+      color: #252525;
+      font-family: 'Poppins';
+
+      a {
+        color: $color-primary;
+      }
+
+      p {
+        display: block;
+        margin-top: 1.5rem;
+      }
+    }
+
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 15rem;
+
+        @media only screen and (max-width: $bp-xsmall) {
+          width: 6rem;
+        }
+      }
+    }
+
+    &-dlt {
+      font-size: 1.5rem;
+      color: #252525;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &-quantity {
+
+      @media only screen and (max-width: $bp-xsmall) {
+        .sdp__quantity-input {
+          width: 5rem;
+        }
+      }
+
+      .div {
+        justify-content: center;
+
+      }
+    }
+  }
+
+  &__total {
+    &-conatiner {
+      border: 1px solid#e9e7e7;
+      margin-top: 5rem;
+      padding: 4rem;
+      font-family: "Poppins";
+    }
+  }
 }

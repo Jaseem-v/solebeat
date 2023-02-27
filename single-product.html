@@ -269,7 +269,7 @@
                                         Quantity
                                     </label>
                                     <div class="d-flex gap-4">
-                                        <button class="sdp__quantity-btn"  data-value="-">-</button>
+                                        <button class="sdp__quantity-btn" data-value="-">-</button>
                                         <input type="number" class="sdp__quantity-input" value="1"></input>
                                         <button class="sdp__quantity-btn" data-value="+">+</button>
                                     </div>
@@ -296,8 +296,13 @@
             <div class="container">
                 <div class="heading heading--left">
                     <h2 class="heading__primary ">Similar products</h2>
-                    <a href="#contact" class="btn">
-                        view more</a>
+                    <!-- <a href="#contact" class="btn">
+                        view more</a> -->
+
+                        <div class="product-slider-btn">
+                            <i class="bi bi-caret-left-square product-slider-btn-prev"></i>
+                            <i class="bi bi-caret-right-square product-slider-btn-next"></i>
+                        </div>
 
                 </div>
 
@@ -305,46 +310,62 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div>
-                                <a href="#" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <a href="#" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <a href="#" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <a href="#" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <a href="#" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <a href="" class="product-card">
-                                    <img src="assets/images/product/1.jpeg" alt="img 1">
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="single-product.html" class="shop__single-product">
+                                    <img src="assets/images/product/1.jpeg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -357,17 +378,6 @@
 
                 <ul class="footer__list">
 
-                    <li class="footer__items">
-                        <!-- <img src="assets/img/logo.png" alt="footer img" class="footer__logo"> -->
-
-                        <h1 class="footer__logo">
-                            SOLEBEAT
-                        </h1>
-                        <p class="paragraph paragraph--footer">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, aperiam.
-                        </p>
-
-                    </li>
                     <li class="footer__items">
                         <h3 class="footer__sub-heading">Navigation </h3>
                         <ul class="footer__nav-list">
@@ -406,63 +416,64 @@
                                 </a></li>
                         </ul>
                     </li>
-
-
-
                     <li class="footer__items">
-                        <h3 class="footer__sub-heading"> Follow us</h3>
+                        <h3 class="footer__sub-heading">Navigation </h3>
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-li">
-                                <ul class="media__social mt-0">
-                                    <li class="media__social-item">
-                                        <a href="#" target="_blank">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="media__social-item"> <a href="#" target="_blank">
-                                            <i class="fab fa-instagram"></i>
-                                        </a></li>
+                            <li class="footer__nav-li"> <a href="#home" class="footer__nav-items">
+                                    Home</a></li>
+                            <li class="footer__nav-li"> <a href="#about" class="footer__nav-items">
 
-                                </ul>
+                                    About
+                                </a>
                             </li>
-                            <h3 class="footer__sub-heading mt-5">Contact Us</h3>
-
-                            <li class="footer__nav-li">
-                                <div class="footer__address footer__address--contact">
-                                    <!-- <div class="footer__address-item text-light  ">
-                                <i class="fas fa-phone mr-5">
-                                </i>
-                                +91 80757 79439
-                            </div> -->
-                                    <div class="footer__address-item">
-                                        <i class="fas fa-envelope mr-5"></i>
-                                        info@solebeat
-                                    </div>
-                                </div>
+                            <li class="footer__nav-li"> <a href="#services" class="footer__nav-items">
+                                    services
+                                </a>
                             </li>
+                            <li class="footer__nav-li"> <a href="#contact" class="footer__nav-items">
+                                    Contact
+                                </a></li>
                         </ul>
+                    </li>
+                    <li class="footer__items">
+                        <h3 class="footer__sub-heading">News Letter </h3>
+                        <div class="footer__news">
+                            <form action="">
+                                <input type="text" class="footer__news-input" placeholder="Your Email">
+                                <button class="btn submit w-100">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
                     </li>
 
 
 
+                    
 
                 </ul>
 
-                <hr class="footer__hr">
-                <div class="footer__copyright">
+
+
+            </div>
+
+        </footer>
+
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__copyright-content">
                     <h2> Copyright &copy;
                         <script>document.write(new Date().getFullYear())</script> Solebeat
                     </h2>
 
                     <h2>
                         Powered by
-                        <a href="#" target="new" class="footer__nvf">Jaseem</a>
+                        <a href="https://techinwallet.com/" target="new" class="footer__nvf">Techinwallet.com</a>
 
                     </h2>
                 </div>
             </div>
-
-        </footer>
+        </div>
     </main>
 
 

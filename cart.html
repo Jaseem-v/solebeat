@@ -127,7 +127,7 @@
             <div class="container">
                 <div class="header-bread__content">
                     <h1 class="header-bread__title">
-                        Login
+                        Cart
                     </h1>
 
                     <ul>
@@ -137,45 +137,158 @@
                                 </strong> </a>
                         </li>
                         <li>
-                            login
+                            cart
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- section -->
-        <section class="login section-padding">
-            <div class="card">
-                <form>
-                    <h2 class="title"> Log in</h2>
-                    <p class="subtitle">Don't have an account? <a href="register.html"> sign Up</a></p>
+
+        <div class="cart section-padding">
+            <div class="container">
+                <div class="cart__content">
+                    <table class="cart__table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="cart__product-img">
+                                        <img src="assets/images/product/cart-1.webp" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2 class="cart__product-title">
+                                        <a href="single-product.html">
+                                            T-shirt</a>
+                                        <p>Size: 40cm<br></p>
+                                    </h2>
+                                    <div class="cart__product-title d-md-none mt-4">Rs. 960.00</div>
+
+
+                                </td>
+                                <td class="d-none d-md-block">
+                                    <div class="cart__product-title">Rs. 960.00</div>
+                                </td>
+                                <td>
+                                    <div class="cart__product-quantity">
+
+                                        <div class="d-flex gap-0 div">
+                                            <button class="sdp__quantity-btn" data-value="-">-</button>
+                                            <input type="number" class="sdp__quantity-input" value="1"></input>
+                                            <button class="sdp__quantity-btn" data-value="+">+</button>
+                                        </div>
+                                        <div class="cart__product-title d-md-none mt-4 text-center">Rs. 960.00</div>
+
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-block">
+                                    <div class="cart__product-title">Rs. 960.00</div>
+                                </td>
+                                <td>
+                                    <i class="bi bi-trash cart__product-dlt "></i>
+                                </td>
+                            </tr>
+
+                            <!-- //////////////////////////////////
+                            // tr -->
+                            <tr>
+                                <td>
+                                    <div class="cart__product-img">
+                                        <img src="assets/images/product/cart-1.webp" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h2 class="cart__product-title">
+                                        <a href="single-product.html">
+                                            T-shirt</a>
+                                        <p>Size: 40cm<br></p>
+                                    </h2>
+                                    <div class="cart__product-title d-md-none mt-4">Rs. 960.00</div>
+
+
+                                </td>
+                                <td class="d-none d-md-block">
+                                    <div class="cart__product-title">Rs. 960.00</div>
+                                </td>
+                                <td>
+                                    <div class="cart__product-quantity">
+
+                                        <div class="d-flex gap-0 div">
+                                            <button class="sdp__quantity-btn" data-value="-">-</button>
+                                            <input type="number" class="sdp__quantity-input" value="1"></input>
+                                            <button class="sdp__quantity-btn" data-value="+">+</button>
+                                        </div>
+                                        <div class="cart__product-title d-md-none mt-4 text-center">Rs. 960.00</div>
+
+                                    </div>
+                                </td>
+                                <td class="d-none d-md-block">
+                                    <div class="cart__product-title">Rs. 960.00</div>
+                                </td>
+                                <td>
+                                    <i class="bi bi-trash cart__product-dlt "></i>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
 
 
 
-                    <div class="email-login">
-                        <label for="email"> <b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="uname" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+
+                <div class="shop__header mt-5 ">
+                    <a href="">
+                        <h3>
+                            <strong>
+                                <i class="bi bi-arrow-90deg-left"></i>
+                                &nbsp; CONTINUE SHOPPING </strong>
+                        </h3>
+
+                    </a>
+                    <a href="">
+                        <h3>
+                            <strong>
+                                <i class="bi bi-trash"></i> CLEAR SHOPPING CART </strong>
+                        </h3>
+
+                    </a>
+
+                </div>
+
+
+                <div class="cart__total">
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="cart__total-conatiner">
+                                <div class="d-flex justify-content-between align-items-center w-100 mb-3">
+                                    <h3>
+                                        SUBTOTAL
+                                    </h3>
+                                    <h3>
+                                        Rs. 1400.00
+                                    </h3>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center w-100 mb-5">
+                                    <h1>
+                                        TOTAL
+                                    </h1>
+                                    <h1>
+                                        Rs. 1400.00
+                                    </h1>
+                                </div>
+
+                                <button class="btn submit w-100">
+                                    PROCEED TO CHECKOUT
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn w-100 mt-3" type="submit">Log In</button>
-                    <!-- <p class="or"><span>or</span></p>
+                </div>
 
-            <div class="social-login">
-                <button class="google-btn">
-                    <img alt="Google"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGQkJCMDA7IiBkPSJNMTEzLjQ3LDMwOS40MDhMOTUuNjQ4LDM3NS45NGwtNjUuMTM5LDEuMzc4QzExLjA0MiwzNDEuMjExLDAsMjk5LjksMCwyNTYNCgljMC00Mi40NTEsMTAuMzI0LTgyLjQ4MywyOC42MjQtMTE3LjczMmgwLjAxNGw1Ny45OTIsMTAuNjMybDI1LjQwNCw1Ny42NDRjLTUuMzE3LDE1LjUwMS04LjIxNSwzMi4xNDEtOC4yMTUsNDkuNDU2DQoJQzEwMy44MjEsMjc0Ljc5MiwxMDcuMjI1LDI5Mi43OTcsMTEzLjQ3LDMwOS40MDh6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojNTE4RUY4OyIgZD0iTTUwNy41MjcsMjA4LjE3NkM1MTAuNDY3LDIyMy42NjIsNTEyLDIzOS42NTUsNTEyLDI1NmMwLDE4LjMyOC0xLjkyNywzNi4yMDYtNS41OTgsNTMuNDUxDQoJYy0xMi40NjIsNTguNjgzLTQ1LjAyNSwxMDkuOTI1LTkwLjEzNCwxNDYuMTg3bC0wLjAxNC0wLjAxNGwtNzMuMDQ0LTMuNzI3bC0xMC4zMzgtNjQuNTM1DQoJYzI5LjkzMi0xNy41NTQsNTMuMzI0LTQ1LjAyNSw2NS42NDYtNzcuOTExaC0xMzYuODlWMjA4LjE3NmgxMzguODg3TDUwNy41MjcsMjA4LjE3Nkw1MDcuNTI3LDIwOC4xNzZ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMjhCNDQ2OyIgZD0iTTQxNi4yNTMsNDU1LjYyNGwwLjAxNCwwLjAxNEMzNzIuMzk2LDQ5MC45MDEsMzE2LjY2Niw1MTIsMjU2LDUxMg0KCWMtOTcuNDkxLDAtMTgyLjI1Mi01NC40OTEtMjI1LjQ5MS0xMzQuNjgxbDgyLjk2MS02Ny45MWMyMS42MTksNTcuNjk4LDc3LjI3OCw5OC43NzEsMTQyLjUzLDk4Ljc3MQ0KCWMyOC4wNDcsMCw1NC4zMjMtNy41ODIsNzYuODctMjAuODE4TDQxNi4yNTMsNDU1LjYyNHoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGMTQzMzY7IiBkPSJNNDE5LjQwNCw1OC45MzZsLTgyLjkzMyw2Ny44OTZjLTIzLjMzNS0xNC41ODYtNTAuOTE5LTIzLjAxMi04MC40NzEtMjMuMDEyDQoJYy02Ni43MjksMC0xMjMuNDI5LDQyLjk1Ny0xNDMuOTY1LDEwMi43MjRsLTgzLjM5Ny02OC4yNzZoLTAuMDE0QzcxLjIzLDU2LjEyMywxNTcuMDYsMCwyNTYsMA0KCUMzMTguMTE1LDAsMzc1LjA2OCwyMi4xMjYsNDE5LjQwNCw1OC45MzZ6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-                    <p class="btn-text">Sign in with Google</p>
-                </button>
-           
-            </div> -->
-
-                    <a class="forget-pass mt-3" href="#">Forgot password?</a>
-                </form>
             </div>
-        </section>
+        </div>
 
-        <!-- section -->
 
         <!-- footer -->
         <footer class="footer">
@@ -271,7 +384,7 @@
                         <script>document.write(new Date().getFullYear())</script> Solebeat
                     </h2>
 
-                   <h2>
+                    <h2>
                         Powered by
                         <a href="https://techinwallet.com/" target="new" class="footer__nvf">Techinwallet.com</a>
 

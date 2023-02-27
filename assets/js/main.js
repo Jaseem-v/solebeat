@@ -54,6 +54,10 @@ var swiper3 = new Swiper(".product-swiper", {
     //     el: ".swiper-pagination",
     //     clickable: true,
     // },
+    navigation: {
+        nextEl: ".product-slider-btn-next",
+        prevEl: ".product-slider-btn-prev",
+    },
     breakpoints: {
         640: {
             slidesPerView: 2,
@@ -72,11 +76,11 @@ var swiper3 = new Swiper(".product-swiper", {
             spaceBetween: 60,
         }
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    loop: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    loop: false,
 });
 
 
