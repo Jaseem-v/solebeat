@@ -131,87 +131,151 @@
 
 
         <header>
-            <!-- <div class="container"> -->
-            <div class="swiper header_swiper">
+
+            <div class="swiper-container header__swiper">
+                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/slider1-bg.webp" />
-                        </a>
+                    <!-- Slider -->
+                    <!-- Slide1 -->
+                    <div class="swiper-slide"
+                        style="background-image: url(https://images.unsplash.com/photo-1484242857719-4b9144542727?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9)">
+                        <div class="slide-text">
+                            <h1>This is some kind of headline</h1>
+                            <p>Here goes a little description to fill this tiny empty space.</p>
+                            <button class="btn">read more</button>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/slider2-bg.webp" />
-                        </a>
+                    <!-- END Slide1 -->
+                    <!-- Slide1 -->
+                    <div class="swiper-slide"
+                        style="background-image: url(https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9)">
+                        <div class="slide-text">
+                            <h1>This is some kind of headline</h1>
+                            <p>Here goes a little description to fill this tiny empty space.</p>
+                            <button class="btn">read more</button>
+                        </div>
                     </div>
-                    <!-- <div class="swiper-slide">
-                        <a href="#">
-                            <img src="assets/images/banner-5.jpeg" />
-                        </a>
-                    </div> -->
+                    <!-- END Slide1 -->
+                    <!-- Slide1 -->
+                    <div class="swiper-slide"
+                        style="background-image: url(https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9)">
+                        <div class="slide-text">
+                            <h1>This is some kind of headline</h1>
+                            <p>Here goes a little description to fill this tiny empty space.</p>
+                            <button class="btn">read more</button>
+                        </div>
+                    </div>
+                    <!-- END Slide1 -->
+                    <!-- Slide1 -->
+                    <div class="swiper-slide"
+                        style="background-image: url(https://images.unsplash.com/photo-1494506132334-19732cd53b32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9)">
+                        <div class="slide-text">
+                            <h1>This is some kind of headline</h1>
+                            <p>Here goes a little description to fill this tiny empty space.</p>
+                            <button class="btn">read more</button>
+                        </div>
+                    </div>
+                    <!-- END Slide1 -->
+
 
                 </div>
-                <div class="swiper-button-next">
-                    <span>
-                        > </span>
-                </div>
-                <div class="swiper-button-prev">
-                    <span>
-                        < </span>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><span></span></div>
+                <div class="swiper-button-next"><span></span></div>
+
             </div>
-            <!-- </div> -->
-            <div class="swiper-pagination"></div>
         </header>
 
 
 
 
-        <section class="categories section-padding">
+        <section class="categories section-padding pb-0">
             <div class="container">
                 <div class="heading ">
                     <h2 class="heading__primary ">Categories</h2>
                     <!-- <a href="#contact" class="btn">
                         view more</a> -->
-
                 </div>
 
-                <div class="swiper-container client-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
-                        <div class="carousel swiper-slide ">
-                            <img src="assets/images/categories/1.jpg" alt="" class="carousel__img ">
-                            <h1 class="carousel__title">category 1</h1>
-                        </div>
+                <div class="row" style="max-width:100%;margin:0 auto;">
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-12">
+                        <div class="category__banner">
+                            <div class="category__banner-item">
+                                <a href="shop.html" class="box-img d-block">
+
+                                    <img data-src="assets/images/categories/2.jpg" class="img-fluid w-100 lazyloaded"
+                                        alt="_img" src="assets/images/categories/2.jpg">
+
+                                </a>
+                                <div class="category__banner-content">
 
 
+                                    <h3 class="category__banner-title">Hoodies</h3>
 
+
+                                    <a href="shop.html" class="category__banner-btn">View More<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-12">
+                        <div class="category__banner">
+                            <div class="category__banner-item">
+                                <a href="shop.html" class="box-img d-block">
+
+                                    <img data-src="assets/images/categories/2.jpg" class="img-fluid w-100 lazyloaded"
+                                        alt="_img" src="assets/images/categories/2.jpg">
+
+                                </a>
+                                <div class="category__banner-content">
+
+
+                                    <h3 class="category__banner-title">T-shirt</h3>
+
+
+                                    <a href="shop.html" class="category__banner-btn">View More<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-12">
+                        <div class="category__banner">
+                            <div class="category__banner-item">
+                                <a href="shop.html" class="box-img d-block">
+
+                                    <img data-src="assets/images/categories/2.jpg" class="img-fluid w-100 lazyloaded"
+                                        alt="_img" src="assets/images/categories/2.jpg">
+
+                                </a>
+                                <div class="category__banner-content">
+
+
+                                    <h3 class="category__banner-title">Shoes</h3>
+
+
+                                    <a href="shop.html" class="category__banner-btn">View More<i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+
             </div>
 
         </section>
 
-        <section class="product-slider section-padding">
+        <section class="product-slider section-padding pb-0">
             <div class="container">
                 <div class="heading heading--left">
                     <h2 class="heading__primary ">Latest</h2>
@@ -385,6 +449,31 @@
                 <ul class="footer__list">
 
                     <li class="footer__items">
+                        <a href="index.html" class="navigation__logo">
+                            <h1>
+                                solebeat
+                            </h1>
+                        </a>
+                        <ul class="d-flex align-items-center gap-4 mt-4 footer__social">
+                            <li>
+                                <a href="#" class="lead">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lead">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lead">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="footer__items">
                         <h3 class="footer__sub-heading">Navigation </h3>
                         <ul class="footer__nav-list">
                             <li class="footer__nav-li"> <a href="#home" class="footer__nav-items">
@@ -423,35 +512,25 @@
                         </ul>
                     </li>
                     <li class="footer__items">
-                        <h3 class="footer__sub-heading">Navigation </h3>
+                        <h3 class="footer__sub-heading">Customer Care </h3>
                         <ul class="footer__nav-list">
                             <li class="footer__nav-li"> <a href="#home" class="footer__nav-items">
-                                    Home</a></li>
+                                Privacy Policy</a></li>
                             <li class="footer__nav-li"> <a href="#about" class="footer__nav-items">
 
-                                    About
+                                Terms & Conditions
                                 </a>
                             </li>
                             <li class="footer__nav-li"> <a href="#services" class="footer__nav-items">
-                                    services
+                                Products Return
                                 </a>
                             </li>
                             <li class="footer__nav-li"> <a href="#contact" class="footer__nav-items">
-                                    Contact
+                                Wholesale Policy
                                 </a></li>
                         </ul>
                     </li>
-                    <li class="footer__items">
-                        <h3 class="footer__sub-heading">News Letter </h3>
-                        <div class="footer__news">
-                            <form action="">
-                                <input type="text" class="footer__news-input" placeholder="Your Email">
-                                <button class="btn submit w-100">
-                                    Submit
-                                </button>
-                            </form>
-                        </div>
-                    </li>
+
 
 
 

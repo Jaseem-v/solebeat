@@ -5,19 +5,24 @@ document.querySelector("#close-search").addEventListener("click", () => {
     document.querySelector("#search").classList.remove("active")
 })
 
-
-var swiper = new Swiper(".header_swiper", {
-    spaceBetween: 30,
-    effect: "fade",
+var mySwiper = new Swiper('.header__swiper', {
+    effect: '',
+    loop: false,
+    speed: 1000,
+    slidesPerView: 1,
     navigation: {
-        nextEl: "header .swiper-button-next",
-        prevEl: "header .swiper-button-prev",
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev'
     },
     pagination: {
-        el: "header .swiper-pagination",
-        clickable: true,
+       el: '.swiper-pagination',
+       type: 'bullets',
+       clickable: 'true'
     },
-});
+ 
+   
+ 
+ });
 
 
 // //////////////////////
